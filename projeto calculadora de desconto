@@ -1,0 +1,23 @@
+import os
+
+os.system("cls")
+
+nome=(input("Digite seu nome :"))
+produto=(input("Digite o produto: "))
+valor_total= float(input("digite o preço:"))
+porcentagem= float(input("digite o valor do desconto:"))
+
+
+desconto= (porcentagem / 100) * valor_total
+valor_final=valor_total - desconto
+
+resultado = valor_final
+
+print("--------NOTA FISCAL--------")
+print("Comprador :",nome)
+print("Produto: ",produto)
+print("--------DESCONTO---------")
+print("Seu desconto é: ",porcentagem,"%")
+print("--------RESULTADO--------")
+print("Preço original: R$",valor_total)
+print("O valor é:  R$", resultado,)
